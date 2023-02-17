@@ -1,0 +1,18 @@
+{
+  "id": 2890609,
+  "category": {
+    "id": 1,
+    "name": "cachorro"
+  },
+  "name": "Nalla",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "vacinado"
+    }
+  ],
+  "status": "pending"
+}
