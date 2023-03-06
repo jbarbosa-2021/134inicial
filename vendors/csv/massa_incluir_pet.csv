@@ -1,0 +1,5 @@
+pet_id,category_id,category_name,pet_name,tags_id,tags_name,status
+280901,1,cachorro,Nalla,1,vacinado,available
+280902,2,gato,Chico,2,castrado,available
+280903,3,peixe,Nemo,3,registrado,available
+280904,2,gato,Bichento,1,vacinado,available
