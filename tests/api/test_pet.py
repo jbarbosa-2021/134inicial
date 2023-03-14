@@ -4,7 +4,7 @@ import json
 import pytest
 import requests
 
-from tests.utils.file_manegar import ler_csv
+from tests.utils.file_manager import ler_csv
 
 # variaveis publicas
 url = 'https://petstore.swagger.io/v2/pet'
@@ -139,20 +139,20 @@ def teste_incluir_pet_em_massa(pet_id,category_id,category_name,pet_name,tags_id
     # 1.1 Dados de Entrada
     # Os dados de entrada proveem do arquivo massa_incluir_pet.csv
     # 1.1.1 Montagem do JSON dinâmico
-    corpo_json =  '{'
+    corpo_json = '{'
     corpo_json += f'  "id": {pet_id},'
-    corpo_json += '  "  "category": {'
-    corpo_json += f'       "id": {category_id},'
-    corpo_json += f'       "name": "{category_name}"'
+    corpo_json += '  "category": {'
+    corpo_json += f'    "id": {category_id},'
+    corpo_json += f'    "name": "{category_name}"'
     corpo_json += '  },'
-    corpo_json += f'  "name": "{pet_name}",'
+    corpo_json +=  f'  "name": "{pet_name}",'
     corpo_json += '  "photoUrls": ['
     corpo_json += '    "string"'
     corpo_json += '  ],'
     corpo_json += '  "tags": ['
     corpo_json += '    {'
-    corpo_json += f'       "id": {tags_id},'
-    corpo_json += f'       "name": "{tags_name}"'
+    corpo_json += f'      "id": {tags_id},'
+    corpo_json += f'      "name": "{tags_name}"'
     corpo_json += '    }'
     corpo_json += '  ],'
     corpo_json += f'  "status": "{status}"'
